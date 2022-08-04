@@ -1,0 +1,61 @@
+/**
+ *  Settings Global do CSS (Stylus)
+ *  - Essas Configurações são chamados em todos arquivos styles
+ *  - Não se deve inserir estruturas css, é permitido somente variaves e funções
+ */
+
+// Placeholder
+$button
+  display inline-block
+  padding 13px 15px
+  border-radius 0
+  background rgba(0, 0, 0, 0.5)
+  color #fff
+  font-weight regular
+  font-size 14px
+
+  &:hover
+    text-decoration none
+
+// icons
+$ico
+  background-color transparent
+  background-position center center
+  background-repeat no-repeat
+
+$ico-before
+  display block
+  width 25px
+  height 25px
+  background-position center center
+  background-size 100% 100%
+  background-repeat no-repeat
+  content ''
+  
+// mixins
+container(args...)
+  margin 0 auto
+  padding 0 (30px / 2)
+  max-width args
+  width 100%
+
+// media queries breakpoints
+desktop = unquote('screen and (min-width: 992px)')
+mobile = unquote('screen and (max-width: 992px)')
+
+// Color
+$white = #edf6f9
+$main-color = #2b2d42
+$main-color-light = #8d99ae
+$accent-color = #ef233c
+$accent-color-light = #d90429
+
+// transition
+$transition = all 0.2s ease-out
+
+// shortcuts
+$bxsd = 0 3px 6px rgba(0, 0, 0, 0.16)
+
+// fonts
+$main-font = 'Montserrat', sans-serif
+$text-font = 'Courier Prime', monospace

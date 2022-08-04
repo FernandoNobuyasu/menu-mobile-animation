@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Mobile com efeito de abertura</title>
+
+  <!-- CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/app.min.css">
+</head>
+
+<body>
+  <div class="anchor">
+
+    <div class="logo-mobile">
+      <a href="/">
+        <img class="logo__img" src="img/logo.svg" alt="Placeholder logo">
+      </a>
+    </div>
+
+    <button class="hamburger mobile" type="button" id="close-menu">
+      <div class="hamburger__close">
+        <span class="hamburger__inner"></span>
+        <span class="hamburger__bottom"></span>
+      </div>
+    </button>
+
+    <nav class="menu menu-mobile">
+      <a class="menu__item" href="/">Home</a>
+      <a class="menu__item" href="about.html">About</a>
+      <a class="menu__item" href="#">Services</a>
+      <a class="menu__item" href="#">Support</a>
+      <a class="menu__item" href="#">Contact us</a>
+    </nav>
+    <div class="content">
+      <header class="header">
+        <div class="header__container container">
+          <div class="logo">
+            <a href="/">
+              <img class="logo__img" src="img/logo.svg" alt="Placeholder logo">
+            </a>
+          </div>
+          <nav class="menu menu-desktop">
+            <a class="menu__item" href="/">Home</a>
+            <a class="menu__item" href="about.html">About</a>
+            <a class="menu__item" href="#">Services</a>
+            <a class="menu__item" href="#">Support</a>
+            <a class="menu__item" href="#">Contact us</a>
+          </nav>
+          <button class="hamburger desktop" type="button" id="open-menu">
+            <div class="hamburger__box">
+              <span class="hamburger__top"></span>
+              <span class="hamburger__inner"></span>
+              <span class="hamburger__bottom"></span>
+            </div>
+            </but>
+        </div>
+      </header>
+      <main class="main container">
+        <section class="main-content">
+          <div class="main-content__text">
+            <h1 class="main-content__title">Lorem ipsum</h1>
+            <h2 class="main-content__subtitle">Neque porro quisquam</h2>
+            <button class="main-content__btn">Click me!</button>
+          </div>
+          <img class="main-content__img" src="img/computer.svg" alt="Imagem da Balle Bot">
+        </section>
+        <section class="secondary-content">
+          <h3 class="secondary-content__title">Lorem ipsum?</h3>
+          <p class="secondary-content__p">1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="secondary-content__p">2. Proin mattis orci ac varius sagittis.</p>
+          <p class="secondary-content__p">3. In congue mauris et quam tristique, eget vestibulum sem varius.</p>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container container">
+          <div class="logo">
+            <a href="/">
+              <img class="logo__img" src="img/logo.svg" alt="Placeholder logo">
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="./js/app.min.js"></script>
+</body>
+
+</html>

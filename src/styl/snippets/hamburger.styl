@@ -1,0 +1,58 @@
+
+.hamburger
+  $button-width = 24px
+  $button-color = #000
+  $dash-height = 2px
+  $dash-spacing = 6px
+  margin 0
+  border none
+  background-color transparent
+  text-transform none
+  cursor pointer
+  transition-timing-function linear
+  transition-duration 0.15s
+  transition-property opacity, filter
+  &.mobile
+    position absolute
+    top: 28px
+    right: 15px
+  &.desktop
+    @media desktop
+      display none
+
+  &__box,
+  &__close
+    position relative
+    width $button-width
+    height 'calc((%s * 3) + (%s * 2))' % ($dash-height $dash-spacing)
+
+  &__inner,
+  &__bottom,
+  &__top
+    position absolute
+    display block
+    width 100%
+    height $dash-height
+    background $button-color
+    pointer-events: none
+
+  &__box
+    .hamburger
+      &__inner
+        top 'calc(50% - %s/2)' % $dash-height
+
+      &__top
+        top 0
+
+      &__bottom
+        bottom 0
+
+  &__close
+    .hamburger
+      &__inner
+        top: calc(50% - 1px)
+        transform rotate(225deg)
+
+      &__bottom
+        bottom calc(50% - 1px)
+        transform rotate(-45deg)

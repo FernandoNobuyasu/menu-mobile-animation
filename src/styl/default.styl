@@ -1,0 +1,25 @@
+body
+  background-color $white
+
+*
+  font-family $main-font
+
+.container
+  container 1300px
+
+input
+  &[type=text],
+  &[type=password],
+  &[type=email],
+  &[type=tel]
+    padding 0 15px
+    height 45px
+    line-height 45px
+    border solid 1px rgba(0, 0, 0, 0.1)
+
+  &:focus::placeholder
+    color transparent
+
+textarea
+  padding 15px
+  border solid 1px rgba(0, 0, 0, 0.1)

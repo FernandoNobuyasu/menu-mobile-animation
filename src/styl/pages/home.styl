@@ -1,0 +1,82 @@
+
+
+.main
+  margin-block 50px
+  @media mobile
+    margin-block 30px
+
+.main-content
+  @media desktop
+    display flex
+    justify-content space-around
+    align-items center
+  @media mobile
+    text-align center
+
+  &__text
+    > * + *
+      margin-top 30px
+      @media mobile
+        margin-top 15px
+
+  &__title
+    color $main-color
+    font-weight 700
+    font-size 64px
+    @media mobile
+      font-size 40px
+
+  &__subtitle
+    color $main-color-light
+    font-weight 400
+    font-size 24px
+    font-family $text-font
+
+  &__btn
+    width 180px
+    height 60px
+    border none
+    border-radius 20px
+    background-color $accent-color
+    box-shadow 4px 5px 4px rgba(0, 0, 0, 0.25)
+    color $white
+    font-weight 400
+    font-size 24px
+    font-family $text-font
+    cursor pointer
+    transition $transition
+    @media mobile
+      width 150px
+      height 40px
+      font-size 20px
+      border-radius 10px
+      margin-bottom 20px
+    &:hover
+      background-color $accent-color-light
+  
+  &__img
+    max-width 100%
+    height auto
+
+.secondary-content
+  margin-top 50px
+  text-align center
+  > * + *
+    margin-top 25px
+  @media mobile
+    margin-top 30px
+    > * + *
+      margin-top 15px
+
+  &__title
+    margin-bottom 16px
+    padding-top 50px
+    border-top 1px solid $accent-color
+    color $main-color
+    font-weight 700
+    font-size 24px
+
+  &__p
+    color $main-color-light
+    font-size 18px
+    font-family $text-font
